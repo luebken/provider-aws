@@ -1,0 +1,10 @@
+apiVersion: elasticsearchservice.aws.crossplane.io/v1alpha1
+kind: ElasticsearchDomain
+metadata:
+  name: sample-es-domain
+spec:
+  forProvider:
+    region: us-east-1
+    domainName: es-test
+  providerConfigRef:
+    name: example
